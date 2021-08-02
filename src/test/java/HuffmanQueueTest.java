@@ -74,16 +74,5 @@ class HuffmanQueueTest {
 		}
 		System.out.println(queue);
 	}
-	
-	@Test
-	public void test4() {
-		int i = 100;
-		asd(i);
-		System.out.println(i);
-	}
-	
-	private void asd(int i) {
-		i = i + 1;
-	}
 
 }
