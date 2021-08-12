@@ -7,7 +7,6 @@ public class HuffmanQueue<E> {
 		this.queue = new Object[DEFAULT_CAPACITY];
 	}
 
-
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
@@ -83,7 +82,7 @@ public class HuffmanQueue<E> {
 	}
 
 	private int getRightChild(int parentNumber) {
-		return (parentNumber * 2) + 1;
+		return getLeftChild(parentNumber) + 1;
 	}
 
 	private boolean shouldSwap(int childNumber, int parentNumber) {
